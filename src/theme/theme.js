@@ -1,3 +1,5 @@
+// Define a theme object to keep styles consistent
+
 export default {
   colors: {
     black: '#333333',

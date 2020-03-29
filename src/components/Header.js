@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, NavItem } from 'react-materialize';
 import styled from 'styled-components';
 
+// Example of styling a third-party component
 const NavbarStyles = styled(Navbar)`
   background-color: ${({ theme }) => theme.colors.primaryColor};
   height: ${({ theme }) => theme.layout.navbarHeight};

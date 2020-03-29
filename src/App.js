@@ -33,7 +33,7 @@ const JokeButton = styled(Button)`
 
 class App extends Component {
   state = {
-    dadJoke: `"Dad, did you get a haircut?" "No, I got them all cut!"`
+    dadJoke: `Dad, did you get a haircut? No, I got them all cut!`
   };
 
   generateDadJoke = async () => {
@@ -54,11 +54,12 @@ class App extends Component {
     const { dadJoke } = this.state;
 
     return (
+      // Pass theme values to all child components
       <ThemeProvider theme={theme}>
         <>
           <Header />
           <AppContainer>
-            <DadJoke>{dadJoke}</DadJoke>
+            <DadJoke>"{dadJoke}"</DadJoke>
             <JokeButton onClick={this.generateDadJoke}>GET A NEW JOKE</JokeButton>
           </AppContainer>
         </>
